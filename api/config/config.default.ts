@@ -26,7 +26,7 @@ export default (appInfo: EggAppInfo) => {
     credentials: true
   }
 
-  config.useConfig = {
+  const useConfig = {
     APP_KEY: '3439d48dc43ed9e73d3b3d67d1bd0d99',
     API: {
       GET_NEW_LIST: 'http://v.juhe.cn/toutiao/index'
@@ -43,5 +43,6 @@ export default (appInfo: EggAppInfo) => {
   return {
     ...config,
     ...bizConfig,
+    ...useConfig
   };
 };
